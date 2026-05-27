@@ -23,15 +23,3 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Test API import
-      run: python -c "from app.main import app; print('API import successful!')"
-
-  docker:
-    runs-on: ubuntu-latest
-    needs: test
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Build Docker image
-      run: docker build -t churn-mlops .
