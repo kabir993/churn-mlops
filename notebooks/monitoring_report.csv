@@ -1,0 +1,4 @@
+Feature,Ref Mean,Current Mean,Drift %,Status
+SeniorCitizen,0.16,0.17,5.5,No Drift ✅
+tenure,32.26,32.65,1.21,No Drift ✅
+MonthlyCharges,64.78,64.71,0.11,No Drift ✅
